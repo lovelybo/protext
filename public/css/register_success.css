@@ -1,0 +1,27 @@
+body {
+  font-family: microsoft yahei;
+  margin: 0;
+  padding: 0;
+  background: #b2b2b2;
+}
+.success_bg {
+  width: 270px;
+  height: 110px;
+  margin: 240px auto;
+  background: #fff;
+  border-radius: 10px;
+}
+.success_bg .waitting {
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid #d6d7dc;
+}
+.success_bg .success_sure {
+  text-align: center;
+  color: #ea5404;
+  line-height: 50px;
+  font-size: 18px;
+}

@@ -1,0 +1,73 @@
+@import url("../header.css");
+.login_bottom {
+  width: 100%;
+  padding-top: 25px;
+  box-sizing: border-box;
+}
+.login_user {
+  border-top: 1px solid #e1e1e1;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 49px;
+  line-height: 49px;
+  background: #fff;
+  text-indent: 2px;
+}
+.login_user span {
+  padding-left: 30px;
+  display: inline-block;
+  background: url("../../img/login/login_user.png") no-repeat 7px 12px;
+  background-size: 25% 50%;
+}
+.login_user div {
+  flex: 1;
+  text-align: left;
+}
+.login_user div input {
+  outline: none;
+  border: none;
+  font-size: 18px;
+}
+.login_user:after {
+  content: '';
+  position: absolute;
+  background: #f0f0f0;
+  left: 10px;
+  right: 10px;
+  height: 1px;
+}
+.login_pwd {
+  border-top: none;
+}
+.login_pwd span {
+  background: url("../../img/login/login_pwd.png") no-repeat 9px 12px;
+  background-size: 20% 45%;
+}
+.btn {
+  outline: none;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  width: 90%;
+  margin: 35px auto 0;
+  background: #c7c7c7;
+}
+.login_bottom .register {
+  display: inline-block;
+  width: 30%;
+  font-size: 12px;
+  color: #ffa500;
+  float: left;
+  margin-left: 5px;
+}
+.login_bottom .forgetpwd {
+  float: right;
+  margin-right: 20px;
+  color: #767677;
+  text-align: right;
+}

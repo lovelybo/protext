@@ -14,11 +14,11 @@ ul
 	z-index 5
 	top 0 
 	left 0
-	height 50px
-	line-height 50px
+	height 45px
+	line-height 45px
 	width 100%
 	background url(../../img/index/banner_img_shadow@2x.png)no-repeat
-	background-size 100% 50px
+	background-size 100% 45px
 	color #fff
 	text-align center
 
@@ -27,7 +27,7 @@ ul
 	float left
 	width 63px
 	text-align center
-	background url(../../img/index/nav_icon_down@2x.png)no-repeat 50px 23px
+	background url(../../img/index/nav_icon_down@2x.png)no-repeat 50px 20px
 	background-size 13px 6px
 .index_top_name
 	display inline-block
@@ -39,7 +39,7 @@ ul
 .index_search
 	position absolute
 	z-index 5
-	top 50px
+	top 45px
 	left 5%
 	right 5%
 	height 33px
@@ -104,22 +104,23 @@ ul
 .index_select
 	margin-top 10px
 	width 100%
+	position relative
 .index_select_top
 	background #fff
 	display flex
+	position relative
 .index_select_top1
 	z-index 15
 	position fixed
 	left 0 
 	right 0
-	top 50px
+	top 45px
 	border-bottom 1px solid #e1e1e1
 .index_select_list
 	flex 2
 	text-align center
-	height 50px
-	line-height 50px
-	position relative
+	height 45px
+	line-height 45px
 	span
 		background url(../../img/index/content_icon02_nor@2x.png) no-repeat 50% 90%
 		background-size 10px 6px
@@ -138,12 +139,11 @@ ul
 		background-size 10px 6px
 		color #ea5404
 .index_select_list_hidden
-	height 0
-	display none
-	transition all 0.5s		
+	display none	
 .index_select_list_left
 	margin-top 1px
 	z-index 10
+	left 0
 	position absolute
 	width 320px
 	display flex
@@ -160,19 +160,52 @@ ul
 			line-height 45px	
 		.area_list_active
 			background #fff
-	.area_list_detail
+	.area_list1
+		overflow-y auto
+		height 300px
+		background #f0f0f0
 		display inline-block
-		flex 1	
-		background #fff
+		flex 1		
 		li
 			height 45px
 			line-height 45px	
+		.area_list_active
+			background #fff
+	.area_list_detail
+		overflow-y auto
+		display inline-block
+		flex 1	
+		background #fff
+		height 300px
+		overflow-y auto
+		li
+			height 45px
+			line-height 45px	
+			position relative
+			&:after
+				position absolute
+				content ''
+				height 1px
+				left 10px
+				right 10px
+				background #d6d7dc
+				bottom 0
 		.all
 			color #ea5404
+	.area_list_detail3
+		display none
+	.area_list_detail3_active
+		display block
 .index_select_bg
 	flex 1
 	display inline-block
 	background url(../../img/index/content_icon01_nor@2x.png)no-repeat center
+	background-size 18px
+.index_select_bg1
+	background url(../../img/index/content_icon01_litre@2x.png)no-repeat center
+	background-size 18px
+.index_select_bg2
+	background url(../../img/index/content_icon01_down@2x.png)no-repeat center
 	background-size 18px
 .index_show
 	background #fff
@@ -224,20 +257,97 @@ ul
 .index_show_right_bg
 	position fixed
 	background url(../../img/index/content_btn_back@2x.png)no-repeat
-	background-size 50px
+	background-size 45px
 	bottom 65px
 	right 25px
-	width 50px
-	height 50px
+	width 45px
+	height 45px
 .index_show_bottom
 	width 100%
 	overflow hidden
 .index_select_list_bg
-	position absolute
-	top 300px
+	position fixed
+	opacity 0.4
+	top 0
 	left 0
 	right 0
+	height 0
 	bottom 0
-	height 200px
 	background #000
+.price_dowm
+	position absolute
+	top 45px 
+	width 320px
+	left 0
+	right 0
+	text-align center
+	z-index 10
+.price_dowm_top
+	background #f0f0f0
+	.price_dowm_top1
+		li
+			height 45px
+			line-height 45px
+	.price_dowm_top2
+		li
+			height 45px
+			line-height 45px
+	.price_dowm_top_active
+		background #fff
+	.search_price
+		padding 0 10% 0 20%
+		margin-bottom 10px
+		box-sizing border-box
+		height 45px
+		line-height 31px
+		display flex
+	.search_price1
+		margin-left 5px
+		flex 2
+		display inline-block
+		width 71px
+		height 31px
+		background #fff
+		border-radius 5px
+	.search_price1_sure
+		flex 1
+		width 55px
+		height 31px
+		line-height 31px
+		color #000
+		margin-left 10px
+.city_select
+	position fixed
+	left 20%
+	top 20%
+	right 20%
+	background #fff
+	border-radius 5px
+	.city_select_top
+		height 45px
+		line-height 45px
+		position relative
+		width 100%
+		text-align center
+		.back_index
+			position absolute
+			left 5%
+			height 45px
+			line-height 45px
+			top 0
+			color #ea5404
+			font-size 14px
+		&:after
+			content ''
+			position absolute
+			background #e1e1e1
+			height 1px
+			left 0
+			right 0
+			bottom 0
+.city_select_area
+	margin-left 5%
+	height 45px
+	line-height 45px
+	border-bottom 1px solid #e1e1e1
 		

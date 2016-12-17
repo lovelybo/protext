@@ -1,10 +1,8 @@
 var $slider = $('.slider_list');
 //获取屏幕宽度
 var width = $(window).width();
-console.log(width)
 //获取轮播个数
 var num = $('.slider_list').length;
-console.log(num)
 //设置总宽度
 $('.slider_width').width(width*num);
 $('.index_select_list_left').width(width);
@@ -72,7 +70,6 @@ var time = setInterval(right,2000);
 
 	$(window).on('scroll',function(){
 		var top = parseInt($(window).scrollTop());
-		console.log(top);
 		if(top>=50){
 			$('.index_top').css('display','none');
 			$('.index_search').css('display','none');
@@ -89,8 +86,7 @@ var time = setInterval(right,2000);
 		}
 		console.log(hg)
 		if(top>=(hg-41)){
-			$('.index_show_bottom').css('margin-top','60px');
-			console.log(1)			
+			$('.index_show_bottom').css('margin-top','60px');	
 			$('.index_select_top').addClass('index_select_top1')
 		}else{
 			$('.index_select_top').removeClass('index_select_top1')
@@ -101,29 +97,76 @@ var time = setInterval(right,2000);
 
 //		console.log(moveY-startY);
 	
-	$('.index_select_list').on('tap',function(){
+	$('.index_select_list').on('touchstart',function(){
+	//黑色背景高度
+	var whg = $(window).height();
+
+	$('.price_dowm').width(width);
 		var $this = $(this);
 		var $index = $this.index();
-			console.log(top)
 		$(window).scrollTop(hg);
 		$this.parent().addClass(('index_select_top1'));
-		
+		console.log($index)
 		if($this.find('span').hasClass('index_select_list1')){
 			$this.find('span').removeClass('index_select_list1');
+			$('.index_select_list_bg').height(0);
 			$this.find('.index_select_list_hidden').css('display','none');
-		}else{
-			$('.index_select_list').find('span').removeClass('index_select_list1').eq($index).addClass('index_select_list1');
+		}else if(!$this.find('span').hasClass('index_select_list1')){
+			$('.index_select_list').find('span').removeClass('index_select_list1');
+			$this.find('span').addClass('index_select_list1');
+			$('.index_select_list_hidden').css('display','none');
+			$('.index_select_list_bg').height(whg).css('top',hg+61);
 			$this.find('.index_select_list_hidden').css('display','block');
 		}
 	})
-	$('.area_list li').on('tap',function(e){
+	$('.area_list li').on('touchstart',function(e){
 		e.stopPropagation();
 		var $this = $(this);
 		var index = $this.index();
-		console.log(index);
-		$('.area_list li').removeClass('area_list_active').eq(index).addClass('area_list_active');
+		$('.area_list li').removeClass('area_list_active').eq(index).addClass('area_list_active');		
+	})
+	$('.area_list1 li').on('touchstart',function(e){
+		e.stopPropagation();
+		var $this = $(this);
+		var index = $this.index();
+		$('.area_list1 li').removeClass('area_list_active').eq(index).addClass('area_list_active');	
+		$('.area_list_detail3').removeClass('area_list_detail3_active').eq(index).addClass('area_list_detail3_active');
+	})
+	$('.price_dowm_top1 li').on('touchstart',function(e){
+		e.stopPropagation();
+		var $this = $(this);
+		var lg = $('.price_dowm_top1 li').length;
+		console.log(lg)
+		var index = $this.index();
+		if(index!=lg-1){
+			$('.price_dowm_top1 li').removeClass('price_dowm_top_active').eq(index).addClass('price_dowm_top_active');
+		}	
+	})
+	$('.price_dowm_top2 li').on('touchstart',function(e){
+		e.stopPropagation();
+		var $this = $(this);
+		var lg = $('.price_dowm_top2 li').length;
+		console.log(lg)
+		var index = $this.index();
+		if(index!=lg-1){
+			$('.price_dowm_top2 li').removeClass('price_dowm_top_active').eq(index).addClass('price_dowm_top_active');
+		}	
+	})
+	$('.index_select_bg').on('touchstart',function(){
+		if(!$('.index_select_bg').hasClass('index_select_bg1')&&!$('.index_select_bg').hasClass('index_select_bg2')){
+			$(this).addClass('index_select_bg1');
+			console.log(1)
+		}else if($('.index_select_bg').hasClass('index_select_bg1')&&!$('.index_select_bg').hasClass('index_select_bg2')){
+			$(this).addClass('index_select_bg2');
+			console.log(2)
+		}else if($('.index_select_bg').hasClass('index_select_bg1')&&$('.index_select_bg').hasClass('index_select_bg2')){
+			$(this).removeClass('index_select_bg2').removeClass('index_select_bg1');
+			console.log(3)
+		}
 		
 	})
+
+
 /*var slideTime;
 $('.slider_width').on('swipeLeft',function(){
 	clearTimeout(slideTime);

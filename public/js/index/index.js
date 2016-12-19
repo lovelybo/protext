@@ -8,7 +8,7 @@ $('.slider_width').width(width*num);
 $('.index_select_list_left').width(width);
 //console.log(s)
 $slider.width(width).height(width*0.85)
-$('.index_slider').height(width*0.85);
+//$('.index_slider').height(width*0.85);
 var hg = width*0.85;
 var i=0;
 var time = setInterval(right,2000);

@@ -58,8 +58,23 @@
   background: url("../img/yuyue/bottom_nor_icon01@2x.png") no-repeat center 8px;
   background-size: 25px;
 }
-.main_bottom ul .active {
+.main_bottom ul .active0 {
   background: url("../img/yuyue/bottom_press_icon04@2x.png") no-repeat center 8px;
+  background-size: 25px;
+  color: #ec461f;
+}
+.main_bottom ul .active1 {
+  background: url("../img/yuyue/bottom_press_icon03@2x.png") no-repeat center 8px;
+  background-size: 25px;
+  color: #ec461f;
+}
+.main_bottom ul .active3 {
+  background: url("../img/yuyue/bottom_press_icon02@2x.png") no-repeat center 8px;
+  background-size: 25px;
+  color: #ec461f;
+}
+.main_bottom ul .active4 {
+  background: url("../img/yuyue/bottom_press_icon01@2x.png") no-repeat center 8px;
   background-size: 25px;
   color: #ec461f;
 }

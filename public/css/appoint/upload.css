@@ -1,0 +1,244 @@
+.must {
+  height: 33px;
+  width: 100%;
+  display: inline-block;
+  padding-left: 10px;
+  line-height: 33px;
+  color: #b6b6b6;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.appo_bar {
+  background: #fff;
+  width: 100%;
+  height: 54px;
+  border-bottom: 1px solid #e3e3e8;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+.appo_bar:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background: url("../img/reservedetails/content_img_user@2x.png") no-repeat;
+  background-size: cover;
+}
+.appo_bar .appo_bar_name {
+  width: 70%;
+  height: 30px;
+  float: left;
+  margin-left: 50px;
+  border-right: 1px solid #e3e3e8;
+}
+.appo_bar .appo_bar_name .bar_name {
+  font-size: 14px;
+  color: #323232;
+  line-height: 16px;
+}
+.appo_bar .appo_bar_name .bar_type {
+  color: #646464;
+  font-size: 12px;
+}
+.appo_bar .bar_tel {
+  width: 15%;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+}
+.appo_bar .bar_tel img {
+  width: 20px;
+  height: 20px;
+}
+.appo_bar_2 {
+  background: #fff;
+  width: 100%;
+  height: 65px;
+  border-bottom: 1px solid #e3e3e8;
+  padding: 10px;
+  padding-top: 7px;
+  box-sizing: border-box;
+}
+.appo_bar_2 .bar_name {
+  font-size: 14px;
+  color: #323232;
+}
+.appo_bar_2 .bar_mess_cen {
+  width: 70%;
+  font-size: 12px;
+  color: #646464;
+}
+.appo_bar_2 .bar_mess_cen .bar_mess_area {
+  float: left;
+  line-height: 16px;
+}
+.appo_bar_2 .bar_mess_cen .bar_mess_type {
+  float: right;
+  line-height: 16px;
+}
+.appo_bar_2 .bar_mess_bot {
+  width: 80%;
+  font-size: 12px;
+  color: #646464;
+}
+.appo_bar_2 .bar_mess_bot .bar_mess_acr {
+  float: left;
+  line-height: 16px;
+}
+.appo_bar_2 .bar_mess_bot .bar_mess_uni {
+  float: right;
+  line-height: 16px;
+}
+.appo_bar_3 {
+  width: 100%;
+  height: 45px;
+  line-height: 25px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #fff;
+  font-size: 14px;
+  color: #323232;
+}
+.appo_btn {
+  display: inline-block;
+  width: 96%;
+  height: 44px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 44px;
+  color: #fff;
+  background: #ea5404;
+  margin-left: 3%;
+  margin-top: 30px;
+}
+.appo_state {
+  width: 100%;
+  height: 44px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  background: #fff;
+}
+.appo_state .state_bar {
+  width: 100%;
+  height: 44px;
+  padding: 5px 10px 5px 0px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e3e3e8;
+}
+.appo_state .state_bar .state_time {
+  width: 10%;
+  text-align: center;
+  color: #323232;
+  line-height: 16px;
+  font-size: 12px;
+  float: left;
+}
+.appo_state .state_bar .state_sta {
+  line-height: 34px;
+  font-size: 14px;
+  color: #323232;
+  display: inline-block;
+  float: right;
+}
+.state_line {
+  padding: 0px;
+  border-bottom: 1px solid #e3e3e8;
+}
+.state_line .state_mar {
+  border: 0;
+  padding-left: 10px;
+}
+.order_btn {
+  width: 100%;
+  height: 49px;
+  position: absolute;
+  bottom: 0px;
+  background: #fff;
+  border-top: 1px solid #e3e3e8;
+}
+.order_btn .btn_one {
+  width: 32%;
+  line-height: 49px;
+  display: inline-block;
+  color: #ea5404;
+  text-align: center;
+  border-right: 1px solid #e3e3e8;
+}
+.order_btn .btn_line {
+  border: 0;
+}
+.head_deng .cha_cancel {
+  font-size: 14px;
+  color: #323232;
+  line-height: 40px;
+  float: left;
+  margin-left: 10px;
+}
+.head_deng .cha_confirm {
+  font-size: 14px;
+  float: right;
+  color: #eb5c18;
+  line-height: 40px;
+  margin-right: 10px;
+}
+.change_time {
+  width: 100%;
+  height: 44px;
+  border-top: 1px solid #e3e3e8;
+  background: #fff;
+}
+.change_time input {
+  color: #bcbcbc;
+  font-size: 14px;
+  width: 24%;
+  height: 40px;
+  float: right;
+  margin-right: 10px;
+  outline: none;
+  border: 0px;
+  font-family: "微软雅黑";
+}
+#time {
+  display: block;
+}
+.wipe .wipe_sm .wipe_one {
+  width: 100%;
+  height: 43px;
+  text-align: center;
+  line-height: 43px;
+  color: #eb5c18;
+  display: inline-block;
+}
+.upload_all {
+  width: 70%;
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  text-align: center;
+}
+.upload_all .up_wor {
+  font-size: 12px;
+  color: #c3c3c4;
+}
+.upload_all .up_pic {
+  width: 100%;
+  height: 143px;
+  background: #878787;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.upload_all .up_pic img {
+  width: 45px;
+  height: 45px;
+  margin-top: 45px;
+}
+.upload_all .up_pic .up_pic_wor {
+  font-size: 12px;
+  color: #fff;
+  line-height: 20px;
+}

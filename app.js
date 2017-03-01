@@ -1,19 +1,24 @@
-var path = require('path');
-var express = require('express');
-var app = express();
+var path = require('path')
+var express = require('express')
 
+var index1 = require('./routes/index')
+var index2 = require('./routes/index')
+var index3 = require('./routes/index')
 
-var viewsPath = path.join(__dirname,'views');
-app.use('/',express.static(viewsPath));
+console.log(obj)
+console.log(++index1.val)
+console.log(++index2.val)
+console.log(++index3.val)
+console.log(index1.num())
 
+var app = express()
 
-var publicPath = path.join(__dirname,'public');
+app.use(express.static(path.join(__dirname, 'app')))
 
-app.use('/public',express.static(publicPath));
-
-
-app.listen(8000,function(){
-	console.log('server run ar port 8000');
+app.get('/', function(req, res){
+    res.send('hello, node')
 })
 
-module.exports = app;
+app.listen(8000, function(){
+    console.log('server run at port 8000');
+})

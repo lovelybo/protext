@@ -1,1 +1,9 @@
 node_modules/
+.project
+.idea/
+*.exe
+logs/
+.vscode/
+*.log
+*.bak
+README.md
